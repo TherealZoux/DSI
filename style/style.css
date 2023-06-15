@@ -1,0 +1,628 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+}
+:root{
+    --mainColor:#EE4248;
+    --textColor: #30444E;
+    --headColor:#1F2E35;
+    --backgroundColor:#ffffff;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+span{
+    color:#EE4248;
+}
+.header{
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: var(--backgroundColor);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo{
+    position: absolute;
+    width: 119px;
+    height: 56px;
+    left: 158px;
+    top: 22px;
+    /* background-image: url(/image/photo_2023-06-13_21-20-51.jpg); */
+    background-size: cover;
+    cursor: pointer;
+
+}
+.header .menu ul{
+    display: flex;
+    flex-direction: row;
+    gap:2em;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 2em;
+}
+
+.header .menu ul li{
+    /* position: absolute; */
+    width: 94px;
+    height: 21px;
+    
+    /* left: 995px; */
+    /* top: 40px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+
+    color: rgba(31, 46, 53, 0.8);
+
+
+}
+
+
+.header .menu ul li a{
+    text-decoration: none;
+    color: var(--textColor);
+    transition: 0.3s ;
+    border-bottom:1px solid #EE4248;
+    border-bottom-width: 0px;
+    
+}
+
+.header .menu ul li a:hover{
+    color: var(--mainColor);
+}
+b.header .menu ul li a::after{
+    content: '';
+    background-color: #25C685;
+    width: 12px;
+    height: 2em;
+    padding: 2px;
+    color: #E5E5E5;
+
+}
+
+
+
+.header .icon ul li{
+    /* Union */
+    position: absolute;
+    left: 81.32%;
+    right: 17.29%;
+    top: 41%;
+    bottom: 40.41%;
+    /* background: rgba(31, 46, 53, 0.8); */
+    background-size: cover;
+    list-style: none;
+    cursor: pointer;
+
+}
+.header .icon #firstChild{
+    background-image: url(../image/photo_2023-06-13_21-55-55.jpg);
+}
+.header .icon #secondChild{
+    background-image: url(../image/photo_2023-06-13_21-56-14.jpg);
+    left: 84.38%;
+    right: 14.24%;
+    top: 42%;
+    bottom: 42%;
+}
+.header .icon #thirdChild{
+    background-image: url(../image/photo_2023-06-13_21-56-34.jpg);
+    left: 87.43%;
+    right: 11.46%;
+    top: 42%;
+    bottom: 42%;
+}
+/* 
+.header .logo::before{
+    content: '';
+    border-left: 1px solid ;
+    height: 60em;
+    position: absolute;
+/* } */
+/* .header .icon #thirdChild::after{
+    content: '';
+    border-right: 1px solid;
+    height: 60em;
+    position: absolute;
+    left: 1em;
+}  */
+
+.container{
+    width: 76%;
+    /* background-color: rgb(70, 135, 192); */
+    height: 80em;
+    position: absolute;
+    top: 10%;
+    /* margin: auto; */
+    left: 9.9em;
+    box-sizing: border-box;
+    margin-top: 6em;
+}
+
+.container .section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .section .groupText{
+    /* position: absolute; */
+    position: relative;
+    width: 545px;
+    height: 351px;
+    /* left: 0px;
+    top: 9.44%; */
+    margin-bottom: 20px;
+    
+}
+
+.container .section .groupText h1{
+    position: absolute;
+    width: 545px;
+    height: 192px;
+    left: 0px;
+    top: -20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.69%;
+    /* or 64px */
+
+
+    color: var(--headColor);
+
+}
+.container .section .groupText h1 span{
+    position: absolute;
+    width: 545px;
+    height: 192px;
+    left: 0px;
+    top: 130px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133.69%;
+    /* or 64px */
+    color: var(--mainColor);
+}
+
+.container .section .groupText p{
+    position: absolute;
+    width: 520px;
+    height: 58px;
+    left: 0px;
+    top: 213px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+
+    color: var(--textColor);
+}
+
+.container .section .groupText button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 32px;
+    gap: 10px;
+
+    position: absolute;
+    width: 161px;
+    height: 53px;
+    left: 0px;
+    top: 314px;
+
+    background: #EE4248;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: 0px;
+    transition: 0.3s ease;
+}
+
+.container .section .groupText button p{
+    width: 121px;
+    height: 29px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: -10px;
+    left: 21px;
+    font-size: 22px;
+    height: 41px;
+}
+
+.container .section .groupText button:hover{
+    background-color: #25C685;
+    cursor: pointer;
+    border-bottom: 4px solid var(--mainColor);
+    /* box-shadow: 2px 1px 1px; */
+    color: v ;
+    
+}
+
+/* .container .section .groupText button p:hover{
+    color: #FF575F;
+} */
+
+.container .section SVG{
+    /* position: absolute;
+    left: 53.28%;
+    right: 2.74%;
+    top: 9.44%;
+    bottom: 18.56%; */
+    width: 35.6em;
+    /* opacity: 0; */
+}
+
+.container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10em;
+}
+
+.container .content .groupText{
+    width: 30em;
+    margin-top: 56px;
+}
+
+.container .content .groupText h1{
+    /* Welcome to Dwidasa Samsara Indonesia (DSI) */
+
+
+    
+    width: 454px;
+    height: 86px;
+   
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133.69%;
+    /* or 43px */
+
+
+    color: #1F2E35;
+}
+
+.container .content .groupText p{
+
+    width: 520px;
+    height: 270px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+
+    color: #30444E;
+
+}
+
+
+.container .services{
+    position: relative;
+
+
+}
+
+.container .services h1{
+    width: 100%;
+    /* position: absolute; */
+    /* width: 288px; */
+    height: 43px;
+    /* left: 419px;
+    top: 20px; */
+    margin-top: 6em;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133.69%;
+    /* identical to box height, or 43px */
+
+    text-align: center;
+
+    color: #1F2E35;
+
+}
+
+.container .services .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .services .content div{
+    width: 33.33%;
+    text-align: center;
+}
+
+
+.container .services .content .product{
+    position: relative;
+    box-sizing: border-box;
+    width: 363px;
+    height: 360px;
+    
+
+}
+.container .services .content .product svg{
+    position: absolute;
+    left: 10%;
+    right: 7.7%;
+    top: -31.75%;
+    bottom: 1.7%;
+}
+
+.container .services .content  h1{
+    margin: 0;
+    width: 100%;
+    height: 37px;
+    text-align: start;
+    margin-left: 1em;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 133.69%;
+    /* or 37px */
+
+
+    color: #EE4248;
+}
+.container .services .content  p{
+    /* position: absolute; */
+    width: 318px;
+    height: 108px;
+    /* left: 24px; */
+    /* top: 191px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    text-align: left;
+    padding-left: 2em;
+
+
+    color: #30444E;
+}
+
+.container .services .content button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
+
+    /* position: absolute; */
+    width: 119px;
+    height: 42px;
+    /* left: 24px; */
+    /* top: 314px; */
+
+    background: #EE4248;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: #EE4248;
+    font-size: 18px;
+    padding-top: 11px;
+    color: #ffffff;
+    margin-left: 2em;
+    transition: 0.5s ease;
+}
+
+.container .services .content button:hover{
+    background-color: #25C685;
+    cursor: pointer;
+    /* box-shadow: 2px 1px 1px; */
+
+}
+
+.container .services .content .service{
+    box-sizing: border-box;
+    position: relative;
+    width: 363px;
+    height: 360px;
+    /* left: 381px;
+    top: 80px;    */
+}
+.container .services .content .service svg{
+    position: absolute;
+    left: 10%;
+    right: 18.75%;
+    top: -31.75%;
+    bottom: 18.75%;
+
+}
+
+.container .services .content .technology{
+    box-sizing: border-box;
+    position: relative;
+    width: 363px;
+    height: 360px;
+}
+
+.container .services .content .technology svg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    top: -31.75%;
+}
+
+.container .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 1126px;
+    height: 188px;
+    /* left: 157px; */
+    /* top: 1893px; */
+    /* background: #575757; */
+}
+
+.container .footer .aboutUs{
+    /* background-color: #25C685; */
+    height: 100%;
+}
+
+
+.container .footer .aboutUs h5{
+    /* position: absolute; */
+    width: 259px;
+    height: 21px;
+    /* left: 1px; */
+    /* top: 94px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    margin-top: 10px;
+    margin-bottom: -0.5em;
+    color: #263238;
+}
+
+.container .footer .aboutUs p{
+
+    /* position: absolute; */
+    width: 317px;
+    height: 54px;
+    /* left: 1px; */
+    /* top: 123px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 149.19%;
+    /* or 27px */
+
+
+    color: #263238;
+}
+
+.container .footer .contact {
+    width: 317px;
+    height: 100%;
+}
+
+.container .footer .contact h3{
+    /* position: absolute; */
+    width: 85px;
+    height: 28px;
+    /* left: 365px; */
+    /* top: 51px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #263238;
+
+}
+
+.container .footer .contact p{
+    /* position: absolute; */
+    width: 269px;
+    height: 81px;
+    /* left: 365px; */
+    /* top: 94px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 149.19%;
+    /* or 27px */
+
+
+    color: #263238;
+}
+
+.container .footer .partner{
+    background-image: url(../image/photo_2023-06-14_04-18-30.jpg);
+    background-size: cover;
+    /* position: absolute; */
+    width: 417px;
+    height: 102.27px;
+    /* left: 709px; */
+    /* top: 75px; */
+
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    top: 2150px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #EE4248;
+    
+}
+.copyright h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
